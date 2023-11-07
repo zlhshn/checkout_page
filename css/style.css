@@ -203,6 +203,17 @@ text-align: center;
 }
 
 
+.no-pro{
+
+  color: black;
+ text-align: center;
+font-weight: bold;
+padding: 3rem 1rem;
+font-size: 1.2rem;
+
+}
+
+
 /*! ------ RESPONSIVE ------- */
 
 @media only screen and (max-width: 800px) {
