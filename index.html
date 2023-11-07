@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header><h1>Checkout App</h1></header>
+    <header><h1>Checkout Product</h1></header>
 
 
     <nav>
@@ -30,12 +30,12 @@
 
     <main>
       <section class="product-list">
-        <h2 class="store"><small>Store:</small> ClarusStore</h2>
+        <h2 class="store"><small>Store:</small> Nike</h2>
         <article class="products">
           <div class="product">
-            <figure><img src="./img/mac.jpg" alt="img" /></figure>
+            <figure><img src="./img/cap.jpg" alt="img" /></figure>
             <div class="product-info">
-              <h2>Macbook M2 Air</h2>
+              <h2>New Era Şapka</h2>
               <div class="product-prices">
                 <strong class="dollar" id="discounted-price">1474.99</strong>
                 <span class="line-through dollar">1694.99</span>
@@ -55,9 +55,9 @@
           </div>
 
           <div class="product">
-            <figure><img src="./img/keyboard.jpg" alt="img" /></figure>
+            <figure><img src="./img/nike.jpg" alt="img" /></figure>
             <div class="product-info">
-              <h2>Apple Keyboard</h2>
+              <h2>Nike Air Force </h2>
               <div class="product-prices">
                 <strong class="dollar" id="discounted-price">185.99</strong>
                 <span class="line-through dollar">199.99</span>
@@ -80,34 +80,39 @@
 
 
 
-      
 
-      <section class="price-table">
-        <div class="total-prices">
-          <div>
-            <h4>SELECTED PRODUCTS</h4>
-            <h2 class="dollar">1.750,97</h2>
-          </div>
-          <button class="finish-btn">Finish Order</button>
-        </div>
 
-        <div class="total-info">
-          <div class="text-div">
-            <span>Shipping</span>
-            <span class="dollar" id="shipping">25,99</span>
-          </div>
+     <section id="summary-section">
+      <h2>SUMMARY</h2>
 
-          <div class="text-div">
-            <span>Tax %18</span>
-            <span class="dollar" id="tax">315,17</span>
-          </div>
 
-          <div class="text-div">
-            <span>Total</span>
-            <span class="dollar" id="total">2092,13</span>
-          </div>
-        </div>
-      </section>
+       <div class="text div1">
+        <span>Subtotal</span>
+        <span>25.90$</span>
+
+       </div>
+       <div class="text div2">
+        <span>Delivery</span>
+        <span>25.90$</span>
+
+       </div>
+       <div class="text div3">
+        <span>Tax</span>
+        <span>25.90$</span>
+
+       </div>
+
+       <div class="text div4">
+        <span>Total</span>
+        <span>2555.90$</span>
+
+       </div>
+
+       <div  class="text div5">
+        <button id="checkoutButton">CHECKOUT ORDER</button>
+       </div>
+
+     </section>
 
 
     </main>
