@@ -1,7 +1,7 @@
 const deleteAllProducts = document.querySelector(".delete-div .fa-trash-can");
 
 const products = document.querySelector(".products");
-
+const numberEl = document.querySelector('#number');
 deleteAllProducts.addEventListener("click", () => {
 
   if(confirm('Do you want delete prodcut?')){
@@ -15,22 +15,32 @@ products.addEventListener("click", (e) => {
   if (e.target.classList.contains("fa-plus")) {
     e.target.closest(".plus-minus").querySelector(".quantity").textContent++;
     calculateProductPrice(e.target);
+    updateNumber();
   } else if (e.target.classList.contains("fa-minus")) {
     if (e.target.nextElementSibling.innerText > 1) {
       e.target.nextElementSibling.innerText--;
       calculateProductPrice(e.target);
+      updateNumber();
     } else if ((e.target.nextElementSibling.innerText = 1)) {
       confirm("Do you want delete product?") &&
         e.target.closest(".product").remove();
       calculateProductPrice(e.target);
+      updateNumber();
     }
   } else if (e.target.classList.contains("fa-trash-can")) {
     e.target.closest(".product").remove();
     calculateProductPrice(e.target);
+    updateNumber();
   }
 });
 
+const updateNumber = () => {
+  const totalQuantity = Array.from(document.querySelectorAll(".quantity"))
+    .map((quantityElement) => parseInt(quantityElement.textContent))
+    .reduce((total, quantity) => total + quantity, 0);
 
+  numberEl.textContent = totalQuantity.toString();
+};
 
 const calculateProductPrice = (btn) => {
   const discountedPrice = btn
@@ -52,7 +62,7 @@ const calculateProductPrice = (btn) => {
 
 const DELİVERY = 25.99;
 const TAX = 0.18;
-const FREE_SHİP_LİMİT = 1000;
+const FREE_SHİP_LİMİT = 500;
 
 const calculateTotal = () => {
 
@@ -99,4 +109,16 @@ const noProduct =()=>{
 
 window.addEventListener("load", () => {
   calculateTotal()
+  updateNumber();
+})
+
+
+const search = document.querySelector('. bi-search ')
+
+search.addEventListener('click',()=>{
+
+  
+
+
+
 })

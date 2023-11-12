@@ -23,10 +23,14 @@ i {
   padding: 0.5rem;
   cursor: pointer;
 }
-i:hover {
+
+
+#headicon:hover {
   color: white;
-  border-radius: 50%;
-  background-color: var(--orange);
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(182, 182, 182);
 }
 
 /** Header */
@@ -34,8 +38,12 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 1rem;
   background-color: white;
-  color: var(--orange-dark);
   border-bottom: 1px solid var(--gray-medium);
+}
+
+#search{
+  border: none;
+  outline: none;
 }
 
 /** NAV */
@@ -50,7 +58,7 @@ nav .my-cart {
   font-size: 22px;
   font-weight: 600;
   padding: 1rem;
-  color:var(--orange-light) ;
+  color: var(--orange);
 }
 nav .my-cart span {
   font-weight: 100;

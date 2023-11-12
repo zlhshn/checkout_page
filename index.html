@@ -12,16 +12,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Checkout</title>
   </head>
 
   <body>
-    <header><h1>Checkout Product</h1></header>
+    <header class="d-flex justify-content-between align-items-center px-4">
+      <div>
+          <img  src="./img/Ekran görüntüsü 2023-11-12 223103.png" alt="" width="" height="80px">
+      </div>
+
+      <div class="">
+        <div class="d-inline-block bg-secondary-subtle">
+          <input class="bg-secondary-subtle" type="text" name="" id="search">
+          <i id="headicon" class="h3 bi bi-search "></i></div>
+        
+          <i id="headicon" class="h2 bi bi-person "></i>
+          <i id="headicon" class= "h2 fa-icons bi bi-bag d-inline position-relative" style="width: 120px; height: 120px;">
+              <span id="number" class="d-flex  d-inline-block justify-content-center align-items-center bg-dark text-white fst-normal fs-6 border rounded-circle position-absolute  bottom-0 end-0" style="width: 1.2rem; height:1.3rem;">0</span>
+          </i>
+           
+           
+      </div>
 
 
-    <nav>
+  </header>
+
+
+    <nav class="bg-secondary-subtle">
       <div class="my-cart">Product in your cart</div>
-      <div class="delete-div">
+      <div class="delete-div ">
         Delete Products <i class="fa-regular fa-trash-can"></i>
       </div>
     </nav>
@@ -29,16 +50,15 @@
 
 
     <main>
-      <section class="product-list">
-        <h2 class="store"><small>Store:</small> Nike</h2>
+      <section class="product-list row">
         <article class="products">
           <div class="product">
             <figure><img src="./img/sweat.jpg" alt="img" /></figure>
             <div class="product-info">
-              <h2>Nike Woman Hoodie</h2>
+              <h2>Woman Hoodie</h2>
               <div class="product-prices">
-                <strong class="dollar" id="discounted-price">69.99</strong>
-                <span class="line-through dollar">79.99</span>
+                <strong class="dollar" id="discounted-price">80.99</strong>
+                <span class="line-through dollar">89.99</span>
               </div>
               <div class="buttons-div">
                 <div>
@@ -49,7 +69,7 @@
                   </div>
                   <i class="fa-regular fa-trash-can"></i>
                 </div>
-                <div class="dollar" id="product-price">60.99</div>
+                <div class="dollar" id="product-price">80.99</div>
               </div>
             </div>
           </div>
@@ -72,6 +92,27 @@
                   <i class="fa-regular fa-trash-can"></i>
                 </div>
                 <div class="dollar" id="product-price">119.99</div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <figure><img src="./img/cap.jpg" alt="img" /></figure>
+            <div class="product-info">
+              <h2>New Era Cap</h2>
+              <div class="product-prices">
+                <strong class="dollar" id="discounted-price">69.99</strong>
+                <span class="line-through dollar">79.99</span>
+              </div>
+              <div class="buttons-div">
+                <div>
+                  <div class="plus-minus">
+                    <i class="fa-solid fa-minus"></i>
+                    <span class="quantity" id="quantity">1</span>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </div>
+                <div class="dollar" id="product-price">69.99</div>
               </div>
             </div>
           </div>
@@ -99,12 +140,13 @@
        <div class="text div3">
         <span>Tax</span>
         <span id="tax">25.90$</span>
+       
 
        </div>
 
        <div class="text div4">
         <span>Total</span>
-        <span id="total">2555.90$</span>
+        <span id="total">2555.90</span>
 
        </div>
 
@@ -120,5 +162,6 @@
 
 
     <script src="checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
