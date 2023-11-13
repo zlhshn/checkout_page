@@ -10,7 +10,7 @@
 - Users can delete the products they added to their cart.
 - Users can delete all items in the cart at once
 
-[checkout_page_live]
+[checkout_page_live]()  <br><br>
 
-![checkout_page_live]
+![checkout_page_live](./img/checkout.gif)
 
