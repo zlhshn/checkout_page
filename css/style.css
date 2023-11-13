@@ -33,6 +33,7 @@ i {
   background-color: rgb(182, 182, 182);
 }
 
+
 /** Header */
 header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -41,9 +42,33 @@ header {
   border-bottom: 1px solid var(--gray-medium);
 }
 
-#search{
+
+
+.searchDiv{
+  display: inline-block;
+  background-color: rgb(218, 218, 218);
+  border-radius: 30px;
+  padding: .3rem .3rem;
+
+
+}
+
+.inputSearch{
+  padding: .5rem 1.4rem;
+  background-color: rgb(218, 218, 218);
   border: none;
   outline: none;
+  border-radius: 30px;
+  display: inline;
+}
+
+.magnifier:hover{
+
+  color: white;
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: rgb(182, 182, 182);
 }
 
 /** NAV */
@@ -164,10 +189,27 @@ main .buttons-div .dollar {
 }
 /*? ---- Product List section --- */
 
+main form{
+
+  position: absolute;
+  background-color:rgb(219, 218, 218);
+  opacity: .7;
+  width:50%;
+  padding: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 40px;
+}
+
+#form{
+  display: none;
+}
+
 
 #summary-section{
    
-  background-color: #383838;
+  background-color: #2e2d2d;
   color: white;
   padding: 2rem;
   border-radius: 15px;
@@ -186,7 +228,7 @@ main .buttons-div .dollar {
 .div4 {
  font-weight: bold;
  font-size: 1.3rem;
- padding-top: 3rem;
+ padding-top: 1rem;
  border-top: 1px solid gray;
  
 }
@@ -195,6 +237,7 @@ main .buttons-div .dollar {
 
   justify-content: center;
   margin-top: 7rem;
+ 
   
 }
 
@@ -209,6 +252,7 @@ text-align: center;
    
   
 }
+
 
 
 .no-pro{
@@ -227,18 +271,43 @@ font-size: 1.2rem;
 @media only screen and (max-width: 800px) {
   main {
     flex-direction: column;
+   
   }
   main .price-table {
-    flex: 1;
+    flex: 5;
   }
   main .price-table .total-prices {
     flex-direction: row;
     justify-content: space-between;
   }
+
+
+  #summary-section{
+   
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  
+  }
+
+  .div5{
+    justify-content: center;
+    margin-top: 2rem;
+    
+  }
+
+  .text{
+    display: flex;
+    justify-content: space-center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   main .price-table .total-prices {
+
     flex-direction: column;
   }
   main .buttons-div {
@@ -250,7 +319,7 @@ font-size: 1.2rem;
   }
   main .buttons-div .dollar {
     margin-top: 1rem;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -261,5 +330,63 @@ font-size: 1.2rem;
   }
   main .buttons-div i {
     margin: 0.1rem;
+  }
+
+
+  #summary-section{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+   
+  
+  }
+
+  nav {
+    padding: 1rem 1rem;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+  }
+
+  header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .4rem;
+    background-color: white;
+    border-bottom: 1px solid var(--gray-medium);
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .searchDiv{
+    display: inline-block;
+    background-color: rgb(218, 218, 218);
+    border-radius: 30px;
+    padding: .3rem .3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  
+  
+  }
+  
+  .inputSearch{
+    padding: .5rem 1.4rem;
+    background-color: rgb(218, 218, 218);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    display: inline;
+    width: 100px;
+  }
+  
+  .magnifier:hover{
+  
+    color: white;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(182, 182, 182);
   }
 }

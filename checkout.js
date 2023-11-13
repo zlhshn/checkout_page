@@ -112,13 +112,31 @@ window.addEventListener("load", () => {
   updateNumber();
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+  const searchIcon = document.querySelector('.bi-search');
+  const inputSearch = document.querySelector('#search');
+  const searchDiv = document.querySelector('#searchDiv');
 
-const search = document.querySelector('. bi-search ')
+  searchIcon.addEventListener('click', () => {
+    inputSearch.classList.toggle('d-none');
+    searchDiv.classList.toggle('searchDiv');
+    inputSearch.classList.toggle('inputSearch');
+    searchIcon.classList.toggle('magnifier');
+  });
+});
 
-search.addEventListener('click',()=>{
-
-  
 
 
 
-})
+
+  const personIcon = document.querySelector('.bi-person');
+  const form = document.querySelector('#form');
+  const closeForm = document.querySelector('#closeForm');
+
+  personIcon.addEventListener('click', (e) => {
+    document.querySelector('main').style.opacity ='.6'
+    form.style.display = 'block';
+    
+   
+  });
+
