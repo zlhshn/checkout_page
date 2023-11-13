@@ -8,6 +8,7 @@ deleteAllProducts.addEventListener("click", () => {
      products.textContent =''
      document.getElementById('no-product').style.display = 'block'
      document.querySelector('.delete-div').style.display ='none'
+     numberEl.textContent = 0
   }
  
 });
