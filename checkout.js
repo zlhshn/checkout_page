@@ -5,8 +5,9 @@ const numberEl = document.querySelector('#number');
 deleteAllProducts.addEventListener("click", () => {
 
   if(confirm('Do you want delete prodcut?')){
-    products.textContent = "No Products";
-    products.classList.add("no-pro");
+     products.textContent =''
+     document.getElementById('no-product').style.display = 'block'
+     document.querySelector('.delete-div').style.display ='none'
   }
  
 });
@@ -101,9 +102,9 @@ document.getElementById('delivery').textContent = delivery.toFixed(2)
 
 
 const noProduct =()=>{
-  products.textContent = "No product"
-  products.classList.add("no-product")
-  document.querySelector(".delete-div").style.display = "none"
+  products.textContent =''
+     document.getElementById('no-product').style.display = 'block'
+     document.querySelector('.delete-div').style.display ='none'
 
 }
 
@@ -134,8 +135,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const closeForm = document.querySelector('#closeForm');
 
   personIcon.addEventListener('click', (e) => {
-    document.querySelector('main').style.opacity ='.6'
+    document.querySelector('.product-list').style.opacity ='.6'
+    document.querySelector('#summary-section').style.opacity='.6'
     form.style.display = 'block';
+    closeForm.style.cursor = 'pointer'
+  
+
+    closeForm.addEventListener('click',()=>{
+
+      document.querySelector('.product-list').style.opacity ='1.0'
+      document.querySelector('#summary-section').style.opacity='1.0'
+      form.style.display = 'none';
+    })
+   
     
    
   });

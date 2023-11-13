@@ -71,6 +71,7 @@ header {
   background-color: rgb(182, 182, 182);
 }
 
+
 /** NAV */
 nav {
   padding: 0 1rem;
@@ -192,20 +193,25 @@ main .buttons-div .dollar {
 main form{
 
   position: absolute;
-  background-color:rgb(219, 218, 218);
-  opacity: .7;
+  background-color:rgb(128, 143, 151);
+  opacity: .9;
   width:50%;
   padding: 2rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  border-radius: 40px;
+  border-radius: 30px;
+  font-size: 20px;
 }
 
 #form{
   display: none;
 }
 
+#no-product{
+  display: none;
+
+}
 
 #summary-section{
    
@@ -257,8 +263,8 @@ text-align: center;
 
 .no-pro{
 
-  color: black;
- text-align: center;
+color: black;
+text-align: center;
 font-weight: bold;
 padding: 3rem 1rem;
 font-size: 1.2rem;
@@ -283,7 +289,6 @@ font-size: 1.2rem;
 
 
   #summary-section{
-   
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -305,7 +310,9 @@ font-size: 1.2rem;
   }
 }
 
+
 @media only screen and (max-width: 500px) {
+
   main .price-table .total-prices {
 
     flex-direction: column;
@@ -321,9 +328,6 @@ font-size: 1.2rem;
     margin-top: 1rem;
     font-size: 30px;
   }
-}
-
-@media only screen and (max-width: 500px) {
   main .product img {
     width: 100px;
     height: 100px;
@@ -339,7 +343,6 @@ font-size: 1.2rem;
     flex-direction: column;
     gap: .2rem;
    
-  
   }
 
   nav {
@@ -350,10 +353,7 @@ font-size: 1.2rem;
   }
 
   header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: .4rem;
-    background-color: white;
-    border-bottom: 1px solid var(--gray-medium);
     display: flex;
     justify-content: center;
   }
@@ -361,8 +361,6 @@ font-size: 1.2rem;
 
   .searchDiv{
     display: inline-block;
-    background-color: rgb(218, 218, 218);
-    border-radius: 30px;
     padding: .3rem .3rem;
     display: flex;
     justify-content: center;
@@ -373,20 +371,14 @@ font-size: 1.2rem;
   
   .inputSearch{
     padding: .5rem 1.4rem;
-    background-color: rgb(218, 218, 218);
-    border: none;
-    outline: none;
-    border-radius: 30px;
     display: inline;
     width: 100px;
   }
   
   .magnifier:hover{
   
-    color: white;
     width: 100px;
     height: 80px;
-    border-radius: 10px;
-    background-color: rgb(182, 182, 182);
+  
   }
 }
